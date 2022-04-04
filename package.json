@@ -1,0 +1,16 @@
+{
+  "name": "achtung-action",
+  "version": "1.0.0",
+  "description": "Github Action for sending notifications via achtung",
+  "scripts": {
+    "build": "node_modules/.bin/ncc build index.js --minify"
+  },
+  "repository": "https://github.com/D00Movenok/achtung-action.git",
+  "author": "D00Movenok <egor.gennadjev@yandex.ru>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@vercel/ncc": "^0.33.3",
+    "axios": "^0.26.1"
+  }
+}

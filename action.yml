@@ -1,0 +1,30 @@
+name: 'Achtung notifier'
+description: 'Send notification to chat using achtung multi-notifier'
+
+branding:
+  icon: 'bell'  
+  color: 'orange'
+
+inputs:
+  webhook:
+    description: 'Achtung endpoing'
+    required: true
+  
+  token:
+    description: 'Achtung token'
+    required: true
+
+  message:
+    description: 'Message text'
+    required: true
+
+outputs:
+  response-body:
+    description: 'Response message'
+
+  response-code:
+    description: 'Response code'
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
