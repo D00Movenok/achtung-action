@@ -20,16 +20,6 @@ For setting it up read [achtung manual](https://github.com/D00Movenok/achtung/bl
 
 **Required.** Message text.
 
-## Outputs
-
-### `response-body`
-
-Response message
-
-### `response-code`
-
-Response status code
-
 ## Usage
 
 ```yml

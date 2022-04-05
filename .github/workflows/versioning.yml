@@ -1,0 +1,16 @@
+name: Keep the versions up-to-date
+
+on:
+  release:
+    types:
+      - published
+      - edited
+
+jobs:
+  run-tag-latest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Change tags
+        uses: Actions-R-Us/actions-tagger@v2
+        with:
+          publish_latest_tag: true

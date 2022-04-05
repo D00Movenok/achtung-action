@@ -18,13 +18,6 @@ inputs:
     description: 'Message text'
     required: true
 
-outputs:
-  response-body:
-    description: 'Response message'
-
-  response-code:
-    description: 'Response code'
-
 runs:
   using: 'node12'
   main: 'dist/index.js'

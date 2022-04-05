@@ -42,10 +42,13 @@ try {
     })
         .then(response => {
             /**
-             * Return response body and status code
+             * Check response for errors
              */
-            core.setOutput("response-body", response.data);
-            core.setOutput("response-code", response.status);
+            if (response.data.status === 'error') {
+                core.setFailed(response.data.error);
+            }
+
+            console.log(response.data);
         })
         .catch(error => {
             core.setFailed(error.message);
