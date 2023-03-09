@@ -20,6 +20,11 @@ For setting it up read [achtung manual](https://github.com/D00Movenok/achtung/bl
 
 **Required.** Message text.
 
+### `verify`
+
+Verify certificate.
+**Default:** true
+
 ## Usage
 
 ```yml
@@ -28,5 +33,6 @@ For setting it up read [achtung manual](https://github.com/D00Movenok/achtung/bl
   with:
     webhook: ${{ secrets.ACHTUNG_WEBHOOK }}
     token: ${{ secrets.ACHTUNG_TOKEN }}
+    verify: 'false'
     message: '📦 This is a message from github actions ;)'
 ```

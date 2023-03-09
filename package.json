@@ -1,6 +1,6 @@
 {
   "name": "achtung-action",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Github Action for sending notifications via achtung",
   "scripts": {
     "build": "node_modules/.bin/ncc build index.js --minify"

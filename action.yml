@@ -1,23 +1,27 @@
-name: 'Achtung notifier'
-description: 'Send notification to chat using achtung multi-notifier'
+name: "Achtung notifier"
+description: "Send notification to chat using achtung multi-notifier"
 
 branding:
-  icon: 'bell'  
-  color: 'orange'
+  icon: "bell"
+  color: "orange"
 
 inputs:
   webhook:
-    description: 'Achtung endpoing'
+    description: "Achtung endpoing"
     required: true
-  
+
   token:
-    description: 'Achtung token'
+    description: "Achtung token"
     required: true
 
   message:
-    description: 'Message text'
+    description: "Message text"
     required: true
 
+  verify:
+    description: "Verify certificate"
+    default: "true"
+
 runs:
-  using: 'node12'
-  main: 'dist/index.js'
+  using: "node12"
+  main: "dist/index.js"
